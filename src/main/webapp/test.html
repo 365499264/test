@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            $("#province").change(function () {
+                var option=$("#province")
+                var select=option.select()
+                alert(option.val()+select.text())
+            })
+        })
+
+
+    </script>
+</head>
+<body>
+<select id="province" >
+    <option id="1"value="1">湖南</option>
+    <option id="2" value="2">湖北</option>
+    <option id="3" value="3">四川</option>
+</select>
+</body>
+</html>
